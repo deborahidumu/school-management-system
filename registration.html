@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/6dc11dd873.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>UMIS</title>
+  </head>
+  <body>
+    <div class="header">
+      <img src="images/babcocklogo.jpg" alt="Babcock" />
+      <div class="container">
+        <img src="images/girl.png" alt="girl" />
+        <div class="sub-container">
+          <p>Mary Ufon</p>
+          <a href="/">View profile</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-container">
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html" class="active-link link" id="index"
+              ><i class="fa-regular fa-user"></i> Personal Details</a
+            >
+          </li>
+          <li>
+            <a href="academic.html" class="link" id="academic-details"
+              ><i class="fa-solid fa-table"></i> Academic Details</a
+            >
+          </li>
+          <li>
+            <a href="registration.html" class="link" id="on-campus"
+              ><i class="fa-regular fa-folder"></i> On-Campus Registration</a
+            >
+          </li>
+          <li>
+            <a href="" class="link" id="finance"
+              ><i class="fa-solid fa-coins"></i> Finance</a
+            >
+          </li>
+          <li>
+            <a href="" class="link" id="schools"
+              ><i class="fa-solid fa-landmark"></i> Schools and Departments</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="content-header">
+        <ul class="header-ul">
+          <div class="tab-links registration-tab-links">
+            <li class="tab active-tab" id="dashboard-tab">
+              <i class="fa-solid fa-bed"></i> Hall of Residence
+            </li>
+            <li class="tab" id="biodata-tab">
+              <i class="fa-solid fa-bowl-food"></i> Meal Type
+            </li>
+            <li class="tab" id="announcements-tab">
+              <i class="fa-solid fa-church"></i> Worship Center
+            </li>
+
+            <li class="disabled-tab">
+              Registration Status
+              <div class="progress-bar"><div class="progress"></div></div>
+              <div class="percent">75%</div>
+            </li>
+          </div>
+        </ul>
+
+        <!-- Hall of Residence tab -->
+        <div class="content-body" id="dashboard">
+          <div class="hall-1">
+            <h3>Hall regulations</h3>
+            <ul class="announcement-list">
+              <li>
+                Lorem ipsum dolor sit amet consectetur. Gravida felis donec sit
+                nunc tellus quis elit elementum. Mi sit eu volutpat eget.
+                Molestie id sed senectus tellus quis aenean vulputate tincidunt
+                justo. Tellus tempor dignissim leo diam at mauris id luctus
+                rhoncus. Urna lectus nunc ut laoreet. Sed tellus aliquam
+                volutpat interdum tristique egestas nisi. At volutpat facilisi
+                commodo id ornare etiam hendrerit pretium. In ut interdum
+                scelerisque in faucibus.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur. Gravida felis donec sit
+                nunc tellus quis elit elementum. Mi sit eu volutpat eget.
+                Molestie id sed senectus tellus quis aenean vulputate tincidunt
+                justo. Tellus tempor dignissim leo diam at mauris id luctus
+                rhoncus. Urna lectus nunc ut laoreet. Sed tellus aliquam
+                volutpat interdum tristique egestas nisi. At volutpat facilisi
+                commodo id ornare etiam hendrerit pretium. In ut interdum
+                scelerisque in faucibus.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur. Gravida felis donec sit
+                nunc tellus quis elit elementum. Mi sit eu volutpat eget.
+                Molestie id sed senectus tellus quis aenean vulputate tincidunt
+                justo. Tellus tempor dignissim leo diam at mauris id luctus
+                rhoncus. Urna lectus nunc ut laoreet. Sed tellus aliquam
+                volutpat interdum tristique egestas nisi. At volutpat facilisi
+                commodo id ornare etiam hendrerit pretium. In ut interdum
+                scelerisque in faucibus.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur. Gravida felis donec sit
+                nunc tellus quis elit elementum. Mi sit eu volutpat eget.
+                Molestie id sed senectus tellus quis aenean vulputate tincidunt
+                justo. Tellus tempor dignissim leo diam at mauris id luctus
+                rhoncus. Urna lectus nunc ut laoreet. Sed tellus aliquam
+                volutpat interdum tristique egestas nisi. At volutpat facilisi
+                commodo id ornare etiam hendrerit pretium. In ut interdum
+                scelerisque in faucibus.
+              </li>
+            </ul>
+
+            <div class="checkbox-container">
+              <input type="checkbox" name="declare" id="declare" />
+              <p>I declare that I shall abide by all hall rules if offered</p>
+            </div>
+
+            <button id="registration-button">Continue</button>
+          </div>
+        </div>
+        <div class="content-body hide" id="dashboard-2">
+          <div class="heading">
+            <h3>Hall of residence</h3>
+            <p>Select your accomodation preference</p>
+          </div>
+          <form class="body slim-form hall-form">
+            <div class="input-data">
+              <select name="category" id="category" class="full-select">
+                <option value="title">Select gender..</option>
+              </select>
+            </div>
+            <div class="input-data">
+              <select name="category" id="category" class="full-select">
+                <option value="title">Select programme..</option>
+              </select>
+            </div>
+            <div class="input-data">
+              <select name="category" id="category" class="full-select">
+                <option value="title">Select hall..</option>
+              </select>
+            </div>
+            <div class="button-container">
+              <button>Send</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Biodata tab -->
+        <div class="content-body hide" id="biodata">
+          <div class="heading">
+            <h3>Meal Type</h3>
+            <p>Select your meal preference</p>
+          </div>
+          <form class="body slim-form hall-form">
+            <div class="input-data">
+              <select name="category" id="category" class="full-select">
+                <option value="title">Select meal category...</option>
+                <option value="title">Off Campus</option>
+                <option value="title">Breakfast and Lunch</option>
+                <option value="title">Breakfast and Supper</option>
+                <option value="title">Lunch and upper</option>
+                <option value="title">Breakfast, Lunch and Supper</option>
+              </select>
+              <div class="button-container">
+                <button class="meal-button">Send</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- Announcements tab -->
+        <div class="content-body hide" id="announcements">
+          <div class="inner-container">
+            <table>
+              <thead>
+                <th>S/N</th>
+                <th>Worship Center</th>
+                <th>Location on Campus</th>
+                <th>Pastor in Charge</th>
+                <th>Spaces</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Bethel Chapel</td>
+                  <td>Bethel Hall Auditorium</td>
+                  <td>Adebowale Adesanya</td>
+                  <td>-1</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Beula</td>
+                  <td>Platinum Hall Auditorium</td>
+                  <td>Emmanuel Eregare</td>
+                  <td>75</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Canaan Land Chapel</td>
+                  <td>Nelson Mandela Auditorium</td>
+                  <td>Olugbenga Idowu</td>
+                  <td>-1</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Christ Our Foundation Chapel</td>
+                  <td>Law Activity Hall Iperu Campus</td>
+                  <td>JAF Adeoti</td>
+                  <td>331</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Covenant Chapel</td>
+                  <td>White Hall Auditorium</td>
+                  <td>Gambo Daudu</td>
+                  <td>-1</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>Dominion Chapel</td>
+                  <td>Ogden Hall Auditorium</td>
+                  <td>Biague Laguibilssial</td>
+                  <td>-1</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>Glory Land Chapel</td>
+                  <td>Winslow Hall</td>
+                  <td>Gift Okan-Gbenedio</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>Grace Chapel</td>
+                  <td>WRA</td>
+                  <td>Kingsley Ananabe</td>
+                  <td>-1</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>Heir of the Kingdom Chapel</td>
+                  <td>BUTH 600 Seater</td>
+                  <td>John Sotunsa</td>
+                  <td>-161</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="worship-button-container">
+              <button id="worship-center-button">Continue</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

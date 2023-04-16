@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/6dc11dd873.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>UMIS</title>
+  </head>
+  <body>
+    <div class="header">
+      <img src="images/babcocklogo.jpg" alt="Babcock" />
+      <div class="container">
+        <img src="images/girl.png" alt="girl" />
+        <div class="sub-container">
+          <p>Mary Ufon</p>
+          <a href="/">View profile</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-container">
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html" class="active-link link" id="index"
+              ><i class="fa-regular fa-user"></i> Personal Details</a
+            >
+          </li>
+          <li>
+            <a href="academic.html" class="link" id="academic-details"
+              ><i class="fa-solid fa-table"></i> Academic Details</a
+            >
+          </li>
+          <li>
+            <a href="registration.html" class="link" id="on-campus"
+              ><i class="fa-regular fa-folder"></i> On-Campus Registration</a
+            >
+          </li>
+          <li>
+            <a href="" class="link" id="finance"
+              ><i class="fa-solid fa-coins"></i> Finance</a
+            >
+          </li>
+          <li>
+            <a href="" class="link" id="schools"
+              ><i class="fa-solid fa-landmark"></i> Schools and Departments</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="content-header" id="main-content">
+        <ul class="header-ul">
+          <div class="tab-links">
+            <li class="tab active-tab" id="dashboard-tab">
+              <i class="fa-solid fa-grip-vertical"></i> Dashboard
+            </li>
+            <li class="tab" id="biodata-tab">
+              <i class="fa-regular fa-user"></i> Biodata
+            </li>
+            <li class="tab" id="announcements-tab">
+              <i class="fa-solid fa-bullhorn"></i> Announcements
+            </li>
+            <li class="tab" id="help-tab">
+              <i class="fa-regular fa-circle-question"></i> Help
+            </li>
+            <li class="disabled-tab">
+              Registration Status
+              <div class="progress-bar"><div class="progress"></div></div>
+              <div class="percent">75%</div>
+            </li>
+          </div>
+        </ul>
+
+        <!-- Dashboard tab -->
+        <div class="content-body" id="dashboard">
+          <div class="heading">
+            <h3>Dashboard</h3>
+            <p>Here are your key data</p>
+            <img src="images/girl.png" alt="girl" />
+            <a>Edit</a>
+          </div>
+          <form class="body">
+            <div class="two-items">
+              <div class="input-data">
+                <label for="Matricno">Matriculation Number</label>
+                <input type="text" />
+              </div>
+              <div class="input-data">
+                <label for="title">Title</label>
+                <input type="text" />
+              </div>
+            </div>
+
+            <div class="two-items">
+              <div class="input-data">
+                <label for="lastName">Last Name</label>
+                <input type="text" />
+              </div>
+              <div class="input-data">
+                <label for="firstName">First Name</label>
+                <input type="text" />
+              </div>
+            </div>
+
+            <div class="two-items">
+              <div class="input-data dropdown-input-data">
+                <label for="phoneno">Phone Number</label>
+                <div class="input">
+                  <select name="country" id="country">
+                    <option value="nigeria">🇳🇬</option>
+                  </select>
+                  <input type="text" />
+                </div>
+              </div>
+              <div class="input-data">
+                <label for="email">Email Address</label>
+                <input type="text" />
+              </div>
+            </div>
+
+            <div class="two-items one-item">
+              <div class="input-data">
+                <label for="address">House Address</label>
+                <input type="text" />
+              </div>
+            </div>
+
+            <div class="two-items">
+              <div class="input-data">
+                <label for="lastName">CGPA</label>
+                <input type="text" />
+              </div>
+              <div class="input-data">
+                <label for="firstName">GPA</label>
+                <input type="text" />
+              </div>
+            </div>
+            <div class="button-container">
+              <button>Submit</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Biodata tab -->
+        <div class="content-body hide" id="biodata">
+          <div class="heading">
+            <h3>Personal Information</h3>
+            <p>Tell us about yourself</p>
+          </div>
+
+          <form class="body">
+            <div class="two-items">
+              <div class="input-data">
+                <input type="text" placeholder="Matriculation Number" />
+              </div>
+              <div class="input-data">
+                <select name="country" id="country" class="full-select">
+                  <option value="title">Title</option>
+                </select>
+              </div>
+            </div>
+            <div class="two-items">
+              <div class="input-data">
+                <input type="text" placeholder="Last Name" />
+              </div>
+              <div class="input-data">
+                <input type="text" placeholder="First Name" />
+              </div>
+            </div>
+            <div class="two-items one-item">
+              <div class="input-data">
+                <input type="text" placeholder="Other Names" />
+              </div>
+            </div>
+            <div class="two-items one-item one-item-select">
+              <div class="input-data dropdown-input-data">
+                <div class="input">
+                  <select name="country" id="country">
+                    <option value="nigeria">🇳🇬</option>
+                  </select>
+                  <input type="text" placeholder="Phone Number" />
+                </div>
+              </div>
+            </div>
+
+            <div class="two-items">
+              <div class="input-data">
+                <input type="text" placeholder="Date of Birth" />
+              </div>
+              <div class="input-data">
+                <select name="gender" id="gender" class="full-select">
+                  <option value="title">Gender</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="two-items one-item">
+              <div class="input-data">
+                <input type="email" placeholder="Email" />
+              </div>
+            </div>
+
+            <div class="two-items">
+              <div class="input-data">
+                <select name="nationality" id="nationality" class="full-select">
+                  <option value="title">Nationality</option>
+                </select>
+              </div>
+              <div class="input-data">
+                <select name="state" id="state" class="full-select">
+                  <option value="title">State of Origin</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="two-items one-item">
+              <div class="input-data">
+                <input type="text" placeholder="Local Government Area" />
+              </div>
+            </div>
+
+            <div class="two-items">
+              <div class="input-data">
+                <select name="marital" id="marital" class="full-select">
+                  <option value="title">Marital Status</option>
+                </select>
+              </div>
+              <div class="input-data">
+                <select name="religion" id="religion" class="full-select">
+                  <option value="title">Religion</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="two-items one-item">
+              <div class="input-data">
+                <input type="text" placeholder="House Address" />
+              </div>
+            </div>
+
+            <div class="two-items one-item">
+              <div class="input-data">
+                <input type="text" placeholder="Postal Code" />
+              </div>
+            </div>
+
+            <div class="button-container">
+              <button>Submit</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Announcements tab -->
+        <div class="content-body hide" id="announcements">
+          <div class="heading">
+            <h3>Announcements</h3>
+            <p>Always stay updated</p>
+          </div>
+
+          <div class="body">
+            <ul class="announcement-list">
+              <li>
+                Lorem ipsum dolor sit amet consectetur. Gravida felis donec sit
+                nunc tellus quis elit elementum. Mi sit eu volutpat eget.
+                Molestie id sed senectus tellus quis aenean vulputate tincidunt
+                justo. Tellus tempor dignissim leo diam at mauris id luctus
+                rhoncus. Urna lectus nunc ut laoreet. Sed tellus aliquam
+                volutpat interdum tristique egestas nisi. At volutpat facilisi
+                commodo id ornare etiam hendrerit pretium. In ut interdum
+                scelerisque in faucibus.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur. Gravida felis donec sit
+                nunc tellus quis elit elementum. Mi sit eu volutpat eget.
+                Molestie id sed senectus tellus quis aenean vulputate tincidunt
+                justo. Tellus tempor dignissim leo diam at mauris id luctus
+                rhoncus. Urna lectus nunc ut laoreet. Sed tellus aliquam
+                volutpat interdum tristique egestas nisi. At volutpat facilisi
+                commodo id ornare etiam hendrerit pretium. In ut interdum
+                scelerisque in faucibus.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur. Gravida felis donec sit
+                nunc tellus quis elit elementum. Mi sit eu volutpat eget.
+                Molestie id sed senectus tellus quis aenean vulputate tincidunt
+                justo. Tellus tempor dignissim leo diam at mauris id luctus
+                rhoncus. Urna lectus nunc ut laoreet. Sed tellus aliquam
+                volutpat interdum tristique egestas nisi. At volutpat facilisi
+                commodo id ornare etiam hendrerit pretium. In ut interdum
+                scelerisque in faucibus.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="content-body hide" id="help">
+          <div class="heading">
+            <h3>Help Center</h3>
+            <p>How can we help you?</p>
+          </div>
+          <form class="body slim-form">
+            <div class="input-data">
+              <select name="category" id="category" class="full-select">
+                <option value="title">Select category of complaint</option>
+              </select>
+              <i class="fa-solid fa-caret-up"></i>
+            </div>
+            <div class="input-data">
+              <textarea
+                name="complaint"
+                id="complaint"
+                cols="30"
+                rows="10"
+                placeholder="Type in specific details of your complaint..."
+              ></textarea>
+            </div>
+            <div class="button-container">
+              <button>Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
